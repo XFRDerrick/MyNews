@@ -13,26 +13,28 @@ class LeftViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
-//        view.backgroundColor = UIColor.redColor()
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func setupUI(){
+    
+        view.addSubview(personalView)
+        
+    
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private func setPersonalView(){
+    
+        personalView.addSubview(heardImageView)
+        
+    
     }
-    */
+    
+    //MARK:- 懒加载视图
+    private lazy var tableView: UITableView = UITableView()
+    private lazy var personalView: UIView = UIView()
+    private lazy var heardImageView : UIImageView = UIImageView(image: UIImage(named: "pa"))
+    
+    
 
 }

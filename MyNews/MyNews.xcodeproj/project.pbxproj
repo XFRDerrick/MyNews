@@ -503,7 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.somethinginteresting.MyNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hetengfei/Desktop/MyNews/MyNews/MyNews/MyNews-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hetengfei/Desktop/MyNews/MyNews/MyNews/MyNews/MyNews-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -515,7 +515,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.somethinginteresting.MyNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hetengfei/Desktop/MyNews/MyNews/MyNews/MyNews-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/hetengfei/Desktop/MyNews/MyNews/MyNews/MyNews/MyNews-Bridging-Header.h";
 			};
 			name = Release;
 		};

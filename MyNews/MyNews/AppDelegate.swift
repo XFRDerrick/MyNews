@@ -6,50 +6,6 @@
 //  Copyright © 2015年 hetefe. All rights reserved.
 //
 
-/**
-
-@property (strong, readwrite, nonatomic) IBInspectable NSString *contentViewStoryboardID;
-@property (strong, readwrite, nonatomic) IBInspectable NSString *leftMenuViewStoryboardID;
-@property (strong, readwrite, nonatomic) IBInspectable NSString *rightMenuViewStoryboardID;
-#endif
-
-@property (strong, readwrite, nonatomic) UIViewController *contentViewController;
-@property (strong, readwrite, nonatomic) UIViewController *leftMenuViewController;
-@property (strong, readwrite, nonatomic) UIViewController *rightMenuViewController;
-@property (weak, readwrite, nonatomic) id<RESideMenuDelegate> delegate;
-
-@property (assign, readwrite, nonatomic) NSTimeInterval animationDuration;
-@property (strong, readwrite, nonatomic) UIImage *backgroundImage;
-
-@property (assign, readwrite, nonatomic) BOOL panGestureEnabled;
-@property (assign, readwrite, nonatomic) BOOL panFromEdge;
-
-@property (assign, readwrite, nonatomic) NSUInteger panMinimumOpenThreshold;
-@property (assign, readwrite, nonatomic) IBInspectable BOOL interactivePopGestureRecognizerEnabled;
-@property (assign, readwrite, nonatomic) IBInspectable BOOL fadeMenuView;
-@property (assign, readwrite, nonatomic) IBInspectable BOOL scaleContentView;
-@property (assign, readwrite, nonatomic) IBInspectable BOOL scaleBackgroundImageView;
-@property (assign, readwrite, nonatomic) IBInspectable BOOL scaleMenuView;
-@property (assign, readwrite, nonatomic) IBInspectable BOOL contentViewShadowEnabled;
-@property (strong, readwrite, nonatomic) IBInspectable UIColor *contentViewShadowColor;
-@property (assign, readwrite, nonatomic) IBInspectable CGSize contentViewShadowOffset;
-@property (assign, readwrite, nonatomic) IBInspectable CGFloat contentViewShadowOpacity;
-@property (assign, readwrite, nonatomic) IBInspectable CGFloat contentViewShadowRadius;
-@property (assign, readwrite, nonatomic) IBInspectable CGFloat contentViewFadeOutAlpha;
-@property (assign, readwrite, nonatomic) IBInspectable CGFloat contentViewScaleValue;
-@property (assign, readwrite, nonatomic) IBInspectable CGFloat contentViewInLandscapeOffsetCenterX;
-@property (assign, readwrite, nonatomic) IBInspectable CGFloat contentViewInPortraitOffsetCenterX;
-@property (assign, readwrite, nonatomic) IBInspectable CGFloat parallaxMenuMinimumRelativeValue;
-@property (assign, readwrite, nonatomic) IBInspectable CGFloat parallaxMenuMaximumRelativeValue;
-@property (assign, readwrite, nonatomic) IBInspectable CGFloat parallaxContentMinimumRelativeValue;
-@property (assign, readwrite, nonatomic) IBInspectable CGFloat parallaxContentMaximumRelativeValue;
-@property (assign, readwrite, nonatomic) CGAffineTransform menuViewControllerTransformation;
-@property (assign, readwrite, nonatomic) IBInspectable BOOL parallaxEnabled;
-@property (assign, readwrite, nonatomic) IBInspectable BOOL bouncesHorizontally;
-@property (assign, readwrite, nonatomic) UIStatusBarStyle menuPreferredStatusBarStyle;
-@property (assign, readwrite, nonatomic) IBInspectable BOOL menuPrefersStatusBarHidden;
-*/
-
 import UIKit
 
 @UIApplicationMain
@@ -72,10 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //设置背景的
         sideMenuViewController.backgroundImage = UIImage(named: "Stars")
         
-        //TODO: 未知属性
-        sideMenuViewController.menuPrefersStatusBarHidden = false
-        sideMenuViewController.menuPreferredStatusBarStyle = .LightContent
-        
         //设置side和mainView之间的阴影效果
         
         sideMenuViewController.contentViewShadowColor = UIColor.blackColor()
@@ -97,20 +49,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         sideMenuViewController.fadeMenuView = true
        
         
-        
         // 管理 以下 设置是否起作用
         sideMenuViewController.parallaxEnabled = false
         //控制主视图在抽屉中左右分占比例
         sideMenuViewController.parallaxContentMaximumRelativeValue = 100
         sideMenuViewController.parallaxContentMinimumRelativeValue = 100
         
+        //TODO: 未知属性
+        sideMenuViewController.menuPrefersStatusBarHidden = false
+        sideMenuViewController.menuPreferredStatusBarStyle = .LightContent
         
         //TODO: 未找到对应效果
-        //        sideMenuViewController.parallaxMenuMinimumRelativeValue = 100
-        //                sideMenuViewController.parallaxMenuMaximumRelativeValue = 100
+        //sideMenuViewController.parallaxMenuMinimumRelativeValue = 100
+        //sideMenuViewController.parallaxMenuMaximumRelativeValue = 100
         
-        // CGAffineTransform: menuViewControllerTransformation;
-        //        sideMenuViewController.menuViewControllerTransformation = CGAffineTransform(a: 100, b: 0, c: 0, d: 0, tx: 100, ty: 100)
+        //CGAffineTransform: menuViewControllerTransformation;
+        //sideMenuViewController.menuViewControllerTransformation = CGAffineTransform(a: 100, b: 0, c: 0, d: 0, tx: 100, ty: 100)
         
         //TODO: 待处理
         //        sideMenuViewController.panMinimumOpenThreshold = 1

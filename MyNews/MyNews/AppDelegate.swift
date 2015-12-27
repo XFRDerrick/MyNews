@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
         
         //设置背景的
-        sideMenuViewController.backgroundImage = UIImage(named: "Stars")
+        sideMenuViewController.backgroundImage = UIImage(named: "wood")
         
         //设置side和mainView之间的阴影效果
         

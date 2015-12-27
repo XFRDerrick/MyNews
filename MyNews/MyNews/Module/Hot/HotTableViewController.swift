@@ -9,11 +9,11 @@
 import UIKit
 
 class HotTableViewController: UITableViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableView.backgroundColor = UIColor.grayColor()
+        tableView.backgroundColor = UIColor(patternImage: UIImage(named: "lightWood")!)
+//        tableView.backgroundColor = UIColor.grayColor()
         // Uncomment the following line to preserve selection between presentations
         
         // self.clearsSelectionOnViewWillAppear = false

@@ -13,7 +13,8 @@ class SearchTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.backgroundColor = UIColor.darkGrayColor()
+//        tableView.backgroundColor = UIColor.darkGrayColor()
+        tableView.backgroundColor = UIColor(patternImage: UIImage(named: "lightWood")!)
         
         setupUI()
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()

@@ -12,8 +12,9 @@ class MeTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        tableView.backgroundColor = UIColor.purpleColor()
+        tableView.backgroundColor = UIColor(patternImage: UIImage(named: "lightWood")!)
+       
+//        tableView.backgroundColor = UIColor.purpleColor()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

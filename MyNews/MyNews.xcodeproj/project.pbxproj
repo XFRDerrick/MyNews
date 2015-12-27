@@ -279,8 +279,7 @@
 				7C83052F1C2EF722008421F2 /* LeftViewController.swift */,
 				7C8305311C2EF72E008421F2 /* RightViewController.swift */,
 			);
-			name = side;
-			path = Me;
+			path = side;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
